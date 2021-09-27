@@ -119,3 +119,46 @@
 .container--slider{
   position: relative;
 }
+
+
+/*Group-link*/
+.groupLink{
+  margin-top: 60px;
+  &-rows{
+    display: flex;
+    flex-direction: column;
+  }
+  &-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    &__item{
+        padding: 35px 30px;
+        background-color: #F4F8FD;
+        width: 49%;
+      &-link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "MPLUS1p-Bold";
+        font-weight: bold;
+        font-size: 21px;
+        line-height: 32px;
+        color: $black;
+        text-decoration: none;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+      &-imgOne{
+        padding-right: 37px;
+      }
+      &-imgTwo{
+        padding-left: 40px;
+      }
+      
+    }
+  }
+}
+
+/* //Group-link*/
