@@ -4,4 +4,118 @@
 /*@import "./fonts";*/
 @import "global";
 
+/* Main-slider */
 
+.mainSlider{
+  &-bg{
+    background-color: #F1F7FF;
+    position: relative;
+  }
+  &-items{
+    display: flex;
+    justify-content: space-between;
+    &__content{
+      position: relative;
+      width: 100%;
+      height: 600px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      &-img {
+        position: absolute;
+        left: -52%;
+      }
+      & h1{
+        margin: 6% 0 3% 0;
+        padding: 0 50% 0 0;
+        font-family: "MPLUS1p-Bold";
+        font-weight: bold;
+        font-size: 64px;
+        line-height: 1.2;
+        position: relative;
+        z-index: 1;
+      }
+      & p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 1.7;
+        margin-bottom: 3%;
+        position: relative;
+        z-index: 1;
+        padding: 0 70% 0 0;
+      }
+      &-button{
+        position: relative;
+        z-index: 1;
+        & button{
+          border: 1px solid #2054A2;
+          padding: 1.5% 7% 1.5% 5.5%;
+          border-radius: 5px;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 1.15;
+          color: $blue;
+          background-color: transparent;
+          cursor: pointer;
+          transition: background .1s ease;
+          &:hover{
+            background-color: $blue;
+            color: #fff;
+          }
+          & img{
+            padding-left: 10px;
+          }
+        }
+      }
+    }
+    &__arrows{
+     position: absolute;
+     right: 10%;
+     top: 40%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: flex-end;
+     z-index: 100;
+     & img{
+       cursor: pointer;
+       opacity: .5;
+       &:hover{
+        opacity: 1;
+       }
+     }
+     & img:first-child{
+       transform: rotate(-180deg);
+     }
+    }
+  }
+  &-dots{
+    position: absolute;
+
+    bottom: 1%;
+    left: -3%;
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    &__dot{
+      box-sizing: content-box;
+      flex: 0 1 auto;
+      width: 27px;
+      height: 5px;
+      margin-right: 7px;
+      margin-left: 7px;
+      cursor: pointer;
+      background-color: $blue;
+      background-clip: padding-box;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      opacity: .5;
+      transition: opacity .6s ease;
+    }
+  }
+}
+.container--slider{
+  position: relative;
+}

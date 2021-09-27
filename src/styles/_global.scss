@@ -25,11 +25,13 @@ p{
 }
 
 .header{
+  width: 100%;
   &-inner{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin: 28px 0 25px 0;
+    margin: 2.7% 0 2.5% 0;
     &__item--logo{
       display: flex;
     }
@@ -41,12 +43,12 @@ p{
         display: flex;
         flex-direction: column;
         text-align: center;
-        margin-left: 15px;
+        margin-left: 3%;
         &-suptitle{
           font-family: "MPLUS1p-Regular";
-          font-weight: 400;
+          
           font-size: 10px;
-          line-height: 15px;
+          line-height: 1.7;
           letter-spacing: 0.02em;
           text-transform: uppercase;
         }
@@ -54,7 +56,7 @@ p{
           font-family: "MPLUS1p-ExtraBold";
           font-weight: 800;
           font-size: 23px;
-          line-height: 34px;
+          line-height: 1.5;
           text-transform: uppercase;
         }
       }
@@ -67,10 +69,9 @@ p{
         }
         & a {
           text-decoration: none;
-          font-style: normal;
-          font-weight: normal;
+          
           font-size: 14px;
-          line-height: 21px;
+          line-height: 1.5;
           color: $blue;
           &:hover{
             text-decoration: underline;
@@ -85,10 +86,10 @@ p{
         }
         & a{
           text-decoration: none;
-          font-style: normal;
-          font-weight: normal;
+          
+          
           font-size: 14px;
-          line-height: 21px;
+          line-height: 1.5;
           color: $blue;
           &:hover{
             text-decoration: underline;
@@ -98,7 +99,7 @@ p{
       &-message{
         & img {
           padding-right: 10px;
-          display: inline-block;
+          
           margin-bottom: 0.7em;
         }
         & a {
@@ -107,7 +108,7 @@ p{
           font-family: "MPLUS1p-Bold";
           font-weight: bold;
           font-size: 14px;
-          line-height: 21px;
+          line-height: 1.5;
           color: $black2;
           text-decoration: none;
           text-align: center;
@@ -128,7 +129,7 @@ p{
           font-family: "MPLUS1p-Bold";
           font-weight: bold;
           font-size: 14px;
-          line-height: 21px;
+          line-height: 1.5;
           color: $black2;
           text-decoration: none;
           text-align: center;
@@ -141,14 +142,16 @@ p{
   }
   &-menu{
     background-color: $blue;
+    width: 100%;
     &__items{
       display: flex;
+      flex-wrap: wrap;
     }
     &__item{
       font-family: "MPLUS1p-Bold";
       font-weight: bold;
       font-size: 14px;
-      line-height: 21px;
+      line-height: 1.5;
       text-transform: uppercase;
       display: flex;
       justify-content: space-between;
@@ -160,7 +163,7 @@ p{
       &-link{
         color: #fff;
         text-decoration: none;
-        margin: 14.5px 29px;
+        margin: 7% 29px;
         display: inline-block;
         position: relative;
         &:hover::after{
@@ -185,4 +188,6 @@ p{
     }
   }
 }
+
+
 
