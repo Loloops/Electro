@@ -1,11 +1,9 @@
-export default class MainSlider {
-  constructor({contentClass, next, prev, sliderContainer}){
-    this.contentClass = document.querySelectorAll(contentClass);
-    this.next = document.querySelector(next);
-    this.prev = document.querySelector(prev);
+import Slider from "./Slider";
+export default class MainSlider  extends Slider{
+  constructor(contentClass, next, prev, sliderContainer){
+    super(contentClass, next, prev, sliderContainer)
     this.slideIndex = 1;
     this.dots = [];
-    this.sliderContainer = document.querySelector(sliderContainer)
   }
 
 
