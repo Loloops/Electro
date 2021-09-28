@@ -7,7 +7,7 @@ import '../index.html'
 // import Post from "./modules/post";
 
 import MainSlider from './modules/MainSlider'
-import NewsSlider from './modules/NewsSlider'
+import MiniSlider from './modules/NewsSlider'
 
 window.addEventListener('DOMContentLoaded', () => {
   'use strict'
@@ -20,15 +20,22 @@ const slider = new MainSlider({
 })
 slider.init()
 
-const newsSlide = new NewsSlider({
-  contentClass: '.news-SliderWrapper__item',
-  next: '.sectionTitle-arrows__arrow-next',
-  prev: '.sectionTitle-arrows__arrow-prev',
-
-  sliderWrapper: '.news-SliderWrapper',
-  sliderInner: '.news-SliderWrapper__inner'
+const newsSlide = new MiniSlider({
+  contentClass: '[data-news-item]',
+  next: '[data-arrow-next="2"]',
+  prev: '[data-arrow-prev="1"]',
+  sliderWrapper: '[data-news-wrapper]',
+  sliderInner: '[data-news-wrapperInner]'
 })
-
 newsSlide.init()
+
+const linksSlide = new MiniSlider({
+  contentClass: '[data-links-item]',
+  next: '[data-arrow-next="4"]',
+  prev: '[data-arrow-prev="3"]',
+  sliderWrapper: '[data-links-wrapper]',
+  sliderInner: '[data-links-wrapperInner]'
+})
+linksSlide.init()
 })
 

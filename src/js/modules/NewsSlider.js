@@ -1,5 +1,5 @@
 import Slider from "./Slider";
-export default class NewsSlider extends Slider {
+export default class MiniSlider extends Slider {
   constructor(contentClass, next, prev, sliderWrapper, sliderInner) {
     super(contentClass, next, prev, sliderWrapper, sliderInner);
     this.width = window.getComputedStyle(this.sliderWrapper).width;
