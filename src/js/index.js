@@ -7,7 +7,7 @@ import '../index.html'
 // import Post from "./modules/post";
 
 import MainSlider from './modules/MainSlider'
-import MiniSlider from './modules/NewsSlider'
+import MiniSlider from './modules/MiniSlider'
 
 window.addEventListener('DOMContentLoaded', () => {
   'use strict'
