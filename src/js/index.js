@@ -8,6 +8,7 @@ import '../index.html'
 
 import MainSlider from './modules/MainSlider'
 import MiniSlider from './modules/MiniSlider'
+import Popup from './modules/popup'
 
 window.addEventListener('DOMContentLoaded', () => {
   'use strict'
@@ -37,5 +38,14 @@ const linksSlide = new MiniSlider({
   sliderInner: '[data-links-wrapperInner]'
 })
 linksSlide.init()
+
+const popup = new Popup({
+  popupBlock: '[data-cookie]',
+  popupBlockClose: '[data-cookie-close]',
+  timeMS: 3000
+})
+popup.init()
+
+
 })
 
