@@ -8,7 +8,8 @@ import '../index.html'
 
 import MainSlider from './modules/MainSlider'
 import MiniSlider from './modules/MiniSlider'
-import Popup from './modules/popup'
+// import Popup from './modules/popup'
+import CookiePopup from './modules/popup'
 
 window.addEventListener('DOMContentLoaded', () => {
   'use strict'
@@ -39,12 +40,11 @@ const linksSlide = new MiniSlider({
 })
 linksSlide.init()
 
-const popup = new Popup({
-  popupBlock: '[data-cookie]',
-  popupBlockClose: '[data-cookie-close]',
-  timeMS: 3000
-})
-popup.init()
+const Cookie = new CookiePopup({
+  popup: '[data-cookie]',
+  popupClose: '[data-cookie-close]'
+});
+Cookie.init()
 
 
 })
