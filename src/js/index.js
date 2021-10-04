@@ -10,6 +10,7 @@ import MainSlider from './modules/MainSlider'
 import MiniSlider from './modules/MiniSlider'
 // import Popup from './modules/popup'
 import CookiePopup from './modules/popup'
+import DropDownMenu from './modules/dropdown'
 
 window.addEventListener('DOMContentLoaded', () => {
   'use strict'
@@ -46,6 +47,11 @@ const Cookie = new CookiePopup({
 });
 Cookie.init()
 
+const DropDown = new DropDownMenu({
+  menuClass: '.header-menu__item',
+  dropdownClass: '.header-menu__item-dropdown',
+})
+DropDown.init()
 
 })
 
