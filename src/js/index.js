@@ -11,6 +11,7 @@ import MiniSlider from './modules/MiniSlider'
 // import Popup from './modules/popup'
 import CookiePopup from './modules/popup'
 import DropDownMenu from './modules/dropdown'
+import Burger from './modules/burger'
 
 window.addEventListener('DOMContentLoaded', () => {
   'use strict'
@@ -52,6 +53,11 @@ const DropDown = new DropDownMenu({
   dropdownClass: '.header-menu__item-dropdown',
 })
 DropDown.init()
+
+const burger = new Burger({
+  burgerSelector: '.burger'
+})
+burger.init()
 
 })
 
