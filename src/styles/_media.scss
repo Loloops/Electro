@@ -28,9 +28,26 @@
   }
 }
 
+@media (max-width: 1050px){
+  .news-SliderWrapper__item{
+    margin-left: 2%;
+  }
+  .links-SliderWrapper__item{
+    margin-left: 1%;
+  }
+}
+
+
+
 @media (max-width: 960px){
   .header-inner__item--mobile{
     display: none;
+  }
+}
+
+@media (max-width: 830px){
+  .news-SliderWrapper__item{
+    margin-left: 1%;
   }
 }
 
@@ -73,6 +90,9 @@
       margin-left: 2%;
     }
   }
+  .news-SliderWrapper__item{
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 750px){
@@ -95,6 +115,20 @@
     height: auto;
     padding-right: 5%;
     margin-right: auto;
+  }
+  .news-SliderWrapper__item-img{
+    margin-left: 25%;
+  }
+  .news-SliderWrapper__item-date{
+    margin-left: 25%;
+  }
+  .news-SliderWrapper__item-title{
+    padding-right: 20%;
+    margin-left: 25%;
+  }
+  .news-SliderWrapper__item-subtitle{
+    margin-left: 25%;
+    padding-right: 20%;
   }
 }
 
@@ -124,6 +158,20 @@
   .header-inner__item-titles-suptitle{
     font-size: 9px;
   }
+  .news-SliderWrapper__item-img{
+    margin-left: 20%;
+  }
+  .news-SliderWrapper__item-date{
+    margin-left: 20%;
+  }
+  .news-SliderWrapper__item-title{
+    padding-right: 20%;
+    margin-left: 20%;
+  }
+  .news-SliderWrapper__item-subtitle{
+    margin-left: 20%;
+    padding-right: 20%;
+  }
 }
 @media (max-width: 500px){
   .mainSlider-items__content h1{
@@ -149,6 +197,20 @@
   .sectionTitle-title{
     font-size: 20px;
   }
+  .news-SliderWrapper__item-img{
+    margin-left: 10%;
+  }
+  .news-SliderWrapper__item-date{
+    margin-left: 10%;
+  }
+  .news-SliderWrapper__item-title{
+    padding-right: 20%;
+    margin-left: 10%;
+  }
+  .news-SliderWrapper__item-subtitle{
+    margin-left: 10%;
+    padding-right: 20%;
+  }
 }
 @media (max-width: 420px){
   .header-inner__item-titles-title{
@@ -163,11 +225,39 @@
   .mainSlider-items__content{
     height: 70vh;
   }
+  .news-SliderWrapper__item-img{
+    margin-left: 5%;
+  }
+  .news-SliderWrapper__item-date{
+    margin-left: 5%;
+  }
+  .news-SliderWrapper__item-title{
+    padding-right: 10%;
+    margin-left: 5%;
+  }
+  .news-SliderWrapper__item-subtitle{
+    margin-left: 5%;
+    padding-right: 10%;
+  }
 }
 
 @media (max-width: 360px){
   .mainSlider-items__content{
     height: 75vh;
+  }
+  .news-SliderWrapper__item-img{
+    margin-left: 0;
+  }
+  .news-SliderWrapper__item-date{
+    margin-left: 0;
+  }
+  .news-SliderWrapper__item-title{
+    padding-right: 5%;
+    margin-left: 0;
+  }
+  .news-SliderWrapper__item-subtitle{
+    margin-left: 0;
+    padding-right: 5%;
   }
 }
 
