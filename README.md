@@ -15,11 +15,11 @@ $ npm start
 
 or
 
-npm run start
+$ npm run start
 
 or
 
-npx start
+$ npx start
 ```
 
 [FireBaseLink](https://electrocommun-61c44.web.app/)
